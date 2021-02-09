@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Put your gym name here</title>
+      <!--Favicon-->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <!--UI Kit framework code-->
+      <!-- UIkit CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/uikit@3.5.10/dist/css/uikit.min.css"
+         />
+      <link rel="stylesheet" href="app/styles.css" />
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+      <!-- UIkit JS -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/uikit@3.5.10/dist/js/uikit.min.js"
+         defer
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/uikit@3.5.10/dist/js/uikit-icons.min.js"
+         defer
+         ></script>
+      <!--End of UI Kit code-->
+   </head>
+   <body>
+      <nav class="navbar">
+         <ul class="navbar-nav">
+            <li class="logo uk-margin-top">
+               <a href="#hero">
+                  <img
+                     class="uk-margin-bottom"
+                     src="../assets/gym-logo.svg"
+                     width="45px"
+                     alt="Some seo comes here"
+                     />
+            </li>
+            <li class="nav-item">
+            <a href="#about-us" class="nav-link"
+               ><i class="icon-primary icon-secondary" data-feather="target"></i
+               ><span class="link-text">About us</span></a
+               >
+            </li>
+            <li class="nav-item">
+               <a href="#activities" class="nav-link">
+               <i class="icon-primary icon-secondary" data-feather="activity"></i>
+               <span class="link-text">Our activities</span></a
+                  >
+            </li>
+            <li class="nav-item">
+               <a href="#our-gym" class="nav-link">
+               <i class="icon-primary icon-secondary" data-feather="package"></i>
+               <span class="link-text">Meet the gym</span></a
+                  >
+            </li>
+            <li class="nav-item">
+               <a href="#plans" class="nav-link"
+                  ><i
+                  class="icon-primary icon-secondary"
+                  data-feather="credit-card"
+                  ></i
+                  ><span class="link-text">Plans</span></a
+                  >
+            </li>
+            <li class="nav-item">
+               <a href="#covid-free" class="nav-link"
+                  ><i class="icon-primary icon-secondary" data-feather="map-pin"></i
+                  ><span class="link-text">Come to train</span></a
+                  >
+            </li>
+         </ul>
+      </nav>
+      <main>
+         <!--Hero section-->
+         <section id="hero" class="hero-section uk-light">
+            <h1 class="big-text">Time to Workout<span class="red">.</span></h1>
+            <div class="scroll-btn">
+               <a href="#about-us"><i data-feather="chevrons-down"></i></a>
+            </div>
+         </section>
+         <!--About us section-->
+         <section id="about-us" class="uk-section">
+            <div class="uk-container uk-container-xlarge">
+               <div
+                  class="uk-flex uk-flex-middle uk-padding uk-child-width-expand@m uk-child-width-1-2@m"
+                  uk-grid
+                  uk-scrollspy="cls: uk-animation-slide-bottom; target: div; delay: 100; repeat: true"
+                  >
+                  <div>
+                     <h2 class="uk-text-bold">About the gym</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        aliquam, turpis et posuere bibendum, nisl nunc dictum tellus,
+                        vel elementum nunc ex vitae justo. Aliquam consectetur tincidunt
+                        nibh. Donec interdum ut est et blandit. Aliquam non efficitur
+                        magna. Suspendisse potenti. Nunc sollicitudin neque quis
+                        fringilla sodales. Ut at dolor vitae lectus vehicula commodo.
+                     </p>
+                     <a class="uk-button uk-button-primary uk-width-1-2@s uk-width-1-1 uk-box-shadow-hover-large" href="#covid-free">Get a free pass</a>
+                  </div>
+                  <div>
+                     <div>
+                        <img src="/assets/about-us-bg.png" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Section Activities-->
+         <section id="activities" class="uk-section">
+            <div class="uk-container uk-container-xlarge">
+               <div class="uk-flex uk-flex-center uk-flex-top uk-child-width-1-3@s uk-dark uk-padding" uk-grid uk-scrollspy="cls: uk-animation-fade; target: div; delay: 50; repeat: true">
+                  <div>
+                     <h2 class="uk-text-bold">Our activities</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        aliquam, turpis et posuere bibendum, nisl nunc dictum tellus,
+                        vel elementum nunc ex vitae justo.
+                     </p>
+                  </div>
+                  <!--Activity 1-->
+                  <div>
+                     <div class="activity-wrapper">
+                        <img src="assets/icons/gym.svg">
+                     </div>
+                     <div class="activity-title uk-text-bold">Gym</div>
+                     <div class="activity-description">Lorem ipsum dolor sit amet</div>
+                  </div>
+                  <!--Activity 2-->
+                  <div>
+                     <div class="activity-wrapper">
+                        <img src="assets/icons/cardio.svg">
+                     </div>
+                     <div class="activity-title uk-text-bold">Cardio</div>
+                     <div class="activity-description">Lorem ipsum dolor sit amet</div>
+                  </div>
+                  <!--Activity 3-->
+                  <div>
+                     <div class="activity-wrapper">
+                        <img src="assets/icons/classes.svg">
+                     </div>
+                     <div class="activity-title uk-text-bold">Collective Classes</div>
+                     <div class="activity-description">Lorem ipsum dolor sit amet</div>
+                  </div>
+                  <!--Activity 4-->  
+                  <div>
+                     <div class="activity-wrapper">
+                        <img src="assets/icons/crossfit.svg">
+                     </div>
+                     <div class="activity-title uk-text-bold">Cross Training</div>
+                     <div class="activity-description">Lorem ipsum dolor sit amet</div>
+                  </div>
+                  <!--Activity 5-->
+                  <div>
+                     <div class="activity-wrapper">
+                        <img src="assets/icons/wellness.svg">
+                     </div>
+                     <div class="activity-title uk-text-bold">Wellness</div>
+                     <div class="activity-description">Lorem ipsum dolor sit amet</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Section our gym-->
+         <section id="our-gym" class="uk-section uk-padding-top uk-padding-bottom">
+            <div class="uk-container uk-container-xlarge">
+               <div class="uk-text-center uk-margin-large-bottom">
+                  <h2 class="uk-text-bold">Meet our outstanding gym</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                     aliquam, turpis et posuere bibendum, nisl nunc dictum tellus,
+                     vel elementum nunc ex vitae justo.
+                  </p>
+               </div>
+               <div class="uk-slider-container-offset" uk-slider>
+                  <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+                     <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/fitness.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Fitness room</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/cross.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Cross Area</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/cardio.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Cardio Zone</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/class-1.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Classroom 1</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/class-2.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Classroom 2</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/spa.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Aqua Zone</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/locker.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Locker Room</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/entrance.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Entrance</h3>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                 <img src="assets/slider/parking.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                 <h3 class="uk-card-title">Parking</h3>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+                  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+               </div>
+            </div>
+         </section>
+         <!--Plans section-->
+         <section id="plans" class="uk-section uk-padding-top uk-padding-bottom">
+            <div class="uk-container uk-container-xlarge">
+               <div class="uk-text-left uk-child-width-1-2@s uk-margin-large-bottom">
+                  <h2 class="uk-text-bold">Choose your plan, save money</h2>
+               </div>
+               <div class="uk-flex uk-flex-center uk-flex-middle uk-child-width-1-3@m uk-dark" uk-grid>
+                  <div>
+                     <div class="plan-card uk-text-center" uk-parallax="y: 20; easing: 0.5; media: @m">
+                        <div class="plan-schedule uk-text-center uk-text-uppercase uk-padding-small">Monthly</div>
+                        <div class="plan-price uk-text-center uk-text-bold uk-padding-small">50€<span class="plan-detail">/mo.</span></div>
+                        <ul class="uk-list uk-list-divider uk-text-left services-list">
+                           <li><i data-feather="check"></i> Matriculation Fee</li>
+                           <li><i class="complementary" data-feather="check"></i>Full gym Access</li>
+                           <li><i data-feather="x"></i> Parking included</li>
+                           <li><i data-feather="x"></i> Treatment Discounts</li>
+                        </ul>
+                        <a class="uk-button uk-button-secondary uk-margin-top uk-margin-bottom uk-width-2-3@m uk-width-1-2 uk-box-shadow-hover-large" href="#covid-free">I'm interested</a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="plan-card uk-box-shadow-large uk-text-center" uk-parallax="y: -20; easing: 0; media: @m">
+                        <div class="plan-schedule best-plan uk-text-center uk-text-uppercase uk-padding-small">Yearly</div>
+                        <div class="highlight uk-text-uppercase uk-text-small uk-border-circle uk-box-shadow-small">Best Choice</div>
+                        <div class="plan-price uk-text-center uk-text-bold uk-padding-small">35€<span class="plan-detail">/mo.</span></div>
+                        <ul class="uk-list uk-list-divider uk-text-left services-list">
+                           <li><i data-feather="x"></i> Matriculation Fee</li>
+                           <li><i class="complementary" data-feather="check"></i>Full gym Access</li>
+                           <li><i class="complementary" data-feather="check"></i> Parking included</li>
+                           <li><i class="complementary" data-feather="check"></i> Treatment Discounts</li>
+                        </ul>
+                        <a class="uk-button uk-button-primary uk-margin-top uk-margin-bottom uk-width-2-3@m uk-width-1-2 uk-box-shadow-hover-large" href="#covid-free">I'm interested</a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="plan-card uk-text-center" uk-parallax="y: 20; easing: 0.5; media: @m">
+                        <div class="plan-schedule uk-text-center uk-text-uppercase uk-padding-small">Quaterly</div>
+                        <div class="plan-price uk-text-center uk-text-bold uk-padding-small">45€<span class="plan-detail">/mo.</span></div>
+                        <ul class="uk-list uk-list-divider uk-text-left services-list">
+                           <li><i data-feather="check"></i> Matriculation Fee</li>
+                           <li><i class="complementary" data-feather="check"></i>Full gym Access</li>
+                           <li><i data-feather="x"></i> Parking included</li>
+                           <li><i class="complementary" data-feather="check"></i> Treatment Discounts</li>
+                        </ul>
+                        <a class="uk-button uk-button-secondary uk-margin-top uk-margin-bottom uk-width-2-3@m uk-width-1-2 uk-box-shadow-hover-large" href="#covid-free">I'm interested</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="get-access" class="uk-section uk-background-fixed uk-background-cover uk-background-center-center" style="background-image: url(/assets/map-bg.png" data-sizes="100vw">
+            <div class="uk-container uk-container-xlarge">
+               <div class="uk-flex uk-flex-center uk-flex-middle uk-padding uk-child-width-1-2@m" uk-grid>
+                  <div>
+                     <div class="talk-box-container">
+                        <div class="talk-box-wrapper uk-padding uk-box-shadow-large">
+                           <ul class="uk-list uk-list-emphasis uk-margin-bottom">
+                              <li class="uk-margin-bottom"><img src="assets/gym-logo-mobile.svg" width="75px"></li>
+                              <li><i class="complementary" data-feather="map"></i> Address</li>
+                              <li><i class="complementary" data-feather="smartphone"></i> Phone number</li>
+                              <li><i class="complementary" data-feather="mail"></i> Email address</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="uk-card uk-card-default uk-padding pass-request-wrapper">
+                        <h2 class="uk-text-bold">Request your free day pass</h2>
+                        <form class="uk-form-stacked">
+                           <div class="uk-margin uk-child-width-auto">
+                              <label class="uk-form-label" for="form-stacked-text">Your name<span class="red">*</span></label>
+                              <div class="uk-form-controls">
+                                 <input class="uk-input" id="form-stacked-text" type="text" placeholder="" required>
+                              </div>
+                           </div>
+                           <div class="uk-margin uk-child-width-auto">
+                              <label class="uk-form-label" for="form-stacked-text">Your email<span class="red">*</span></label>
+                              <div class="uk-form-controls">
+                                 <input class="uk-input" id="form-stacked-text" type="email" placeholder="" required>
+                              </div>
+                           </div>
+                           <div class="uk-margin uk-child-width-auto">
+                              <label class="uk-form-label" for="form-stacked-text">Your phone<span class="red">*</span></label>
+                              <div class="uk-form-controls">
+                                 <input class="uk-input" id="form-stacked-text" type="numer" placeholder="" required>
+                              </div>
+                           </div>
+                           <div class="uk-margin uk-child-width-auto">
+                              <label class="uk-form-label" for="form-stacked-text">Pick a day<span class="red">*</span></label>
+                              <div class="uk-form-controls">
+                                 <input class="uk-input" type="date" name="pass-day"
+                                    value="2021-01-01"
+                                    min="2021-02-01" max="2021-12-31" required>
+                              </div>
+                           </div>
+                           <div class="uk-margin uk-child-width-auto">
+                              <label class="uk-form-label" for="form-stacked-text">Choose an hour<span class="red">*</span></label>
+                              <div class="uk-form-controls">
+                                 <select class="uk-select" id="form-horizontal-select" required>
+                                    <option>7.00AM-8.00AM</option>
+                                    <option>8.00AM-9.00AM</option>
+                                    <option>9.00AM-10.00AM</option>
+                                    <option>10.00AM-11.00AM</option>
+                                    <option>11.00AM-12.00PM</option>
+                                    <option>12.00PM-1.00PM</option>
+                                    <option>1.00pM-2.00PM</option>
+                                    <option>2.00pM-3.00PM</option>
+                                    <option>3.00pM-4.00PM</option>
+                                    <option>4.00pM-5.00PM</option>
+                                    <option>5.00pM-6.00PM</option>
+                                    <option>6.00pM-7.00PM</option>
+                                    <option>7.00pM-8.00PM</option>
+                                    <option>9.00pM-10.00PM</option>
+                                    <option>510.00pM-11.00PM</option>
+                                 </select>
+                                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-checkbox" type="checkbox" checked required> I have read and I'm agree with your <a href="#">terms of use</a> and <a href="#">privacy policy</a></label>
+                                 </div>
+                                 <div class="uk-margin uk-child-width-auto uk-text-center">
+                                    <button class="uk-button uk-button-primary" type="submit" id="form-submit">Request your pass</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Optional covid free instructions-->
+         <section id="covid-free"class="uk-section uk-text-center uk-padding-top uk-padding-bottom">
+            <div class="uk-margin-large-bottom uk-margin-large-top uk-container uk-container-xlarge">
+               <h2 class="uk-text-bold">Before you come, review our COVID-19 protocols</h2>
+               <p class="uk-text-lead">We are glad to see you again. And that is why we encourage you too keep safe while you are using our installations. Please take a moment to read our COVID-19 free protocol to ensure your health</p>
+               <button class="uk-button uk-button-secondary" href="#covid-info" uk-toggle>Read protocol</button>
+               <div id="covid-info" uk-modal>
+                  <div class="uk-modal-dialog">
+                     <button class="uk-modal-close-default" type="button" uk-close></button>
+                     <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">COVID Free Protocol</h2>
+                     </div>
+                     <div class="uk-modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     </div>
+                     <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-primary uk-modal-close" type="button">I understood</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--Entrance animation (app.js)-->
+      <div class="intro">
+         <div class="intro-text uk-light">
+            <h1 class="hide">
+               <span class="text">Time to Improve.</span>
+            </h1>
+            <h1 class="hide">
+               <span class="text">Time to Sweat.</span>
+            </h1>
+            <h1 class="hide">
+               <span class="text">Time to Push.</span>
+            </h1>
+         </div>
+      </div>
+      <div class="slider"></div>
+      <!--End of Entrance animation (app.js)-->
+      <!--Logo mobile-->
+      <div class="mobile-logo-wrapper">
+         <div uk-grid>
+            <div>
+               <div class="uk-width-1-2 uk-align-center">
+                  <a href="#hero">
+                  <img src="/assets/gym-logo-mobile.svg" width="100pxx" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <footer>
+         <div class="uk-container uk-container-xlarge main-footer uk-margin-top uk-light">
+            <div class="uk-flex uk-flex-top uk-child-width-1-4@m uk-child-width-1-2" uk-grid>
+               <div>
+                  <div id="footer-col-1">
+                     <h4 class="complementary">About the gym</h4>
+                     <ul class="uk-list">
+                        <li><a class="uk-button uk-button-text" href="#">Item 1</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 2</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 3</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 4</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <div id="footer-col-2">
+                     <h4 class="complementary">Clients</h4>
+                     <ul class="uk-list">
+                        <li><a class="uk-button uk-button-text" href="#">Item 1</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 2</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <div id="footer-col-3">
+                     <h4 class="complementary">Privacy</h4>
+                     <ul class="uk-list">
+                        <li><a class="uk-button uk-button-text" href="#">Item 1</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 2</a></li>
+                        <li><a class="uk-button uk-button-text" href="#">Item 3</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <div>
+                     <img src="assets/gym-logo-footer.svg" width="80px">
+                  </div>
+                  <div class="uk-flex uk-flex-inline uk-grid uk-margin-top">
+                     <div><a href=www.instagram.com><i data-feather="instagram"></i></a></div>
+                     <div><a href=www.facebook.com><i data-feather="facebook"></i></a></div>
+                     <div><a href=www.youtube.com><i data-feather="youtube"></i></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="secondary-footer uk-text-center uk-light">
+            Copyright 2021. Made with &#128156; by <a class="uk-margin-small-left" href="malto:pipodesignstudio@gmail.com"><img src="assets/pipo-logo.svg" width="60px"></a>
+         </div>
+      </footer>
+      <!--End of footer-->
+      <!--Gsap library-->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+         crossorigin="anonymous"
+         ></script>
+      <script src="app/app.js" defer></script>
+      <!--Fetaher icons replace method-->
+      <script>
+         feather.replace();
+      </script>
+   </body>
+</html>
